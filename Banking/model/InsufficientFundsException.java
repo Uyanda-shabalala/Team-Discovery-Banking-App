@@ -37,10 +37,10 @@ public class InsufficientFundsException extends Exception {
      * formatted to two decimal places.
      */
 
-    @override
+    @Override
     public String getMessage(){
         return "Insufficient funds. You need R "
-                +string.format("%.2f", shortfall)
+                +String.format("%.2f", shortfall)
                 +" more to complete this withdrawal."
     }
 }
